@@ -9,9 +9,9 @@ def generate_launch_description():
             executable='static_transform_publisher',
             name='base_to_laser_tf',
             arguments=[
-                '--x', '0.0',
+                '--x', '0.22',
                 '--y', '0.0',
-                '--z', '0.0',
+                '--z', '0.13',
                 '--roll', '0.0',
                 '--pitch', '0.0',
                 '--yaw', '0.0',
