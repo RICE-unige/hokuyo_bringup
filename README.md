@@ -49,8 +49,8 @@ Open another terminal:
 
 ```bash
 source /opt/ros/jazzy/setup.bash
-ros2 topic hz unitree_go1//scan
-ros2 topic echo --once unitree_go1//scan
+ros2 topic hz unitree_go1/scan
+ros2 topic echo --once unitree_go1/scan
 ```
 
 The scan message should have:
@@ -70,7 +70,7 @@ In RViz:
 
 1. Set `Fixed Frame` to `unitree_go1/trunk`.
 2. Add a `LaserScan` display.
-3. Set the LaserScan topic to `unitree_go1//scan`.
+3. Set the LaserScan topic to `unitree_go1/scan`.
 
 ## Notes
 
