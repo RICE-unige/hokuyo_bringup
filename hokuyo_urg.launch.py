@@ -22,6 +22,7 @@ def generate_launch_description():
         Node(
             package='urg_node',
             executable='urg_node_driver',
+            namespace='unitree_go1',
             name='urg_node',
             output='screen',
             parameters=[{
