@@ -5,7 +5,7 @@ Bring up the Hokuyo laser scanner with ROS 2 Jazzy.
 The launch publishes `/scan` and a static TF:
 
 ```text
-base_link -> laser
+unitree_go1/trunk -> unitree_go1/laser
 ```
 
 ## 1. Install
@@ -56,7 +56,7 @@ ros2 topic echo --once /scan
 The scan message should have:
 
 ```text
-header.frame_id: laser
+header.frame_id: unitree_go1/laser
 ```
 
 ## 4. View In RViz
@@ -68,7 +68,7 @@ rviz2
 
 In RViz:
 
-1. Set `Fixed Frame` to `base_link`.
+1. Set `Fixed Frame` to `unitree_go1/trunk`.
 2. Add a `LaserScan` display.
 3. Set the LaserScan topic to `/scan`.
 
