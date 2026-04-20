@@ -15,8 +15,8 @@ def generate_launch_description():
                 '--roll', '0.0',
                 '--pitch', '0.0',
                 '--yaw', '0.0',
-                '--frame-id', 'base_link',
-                '--child-frame-id', 'laser',
+                '--frame-id', 'unitree_go1/base',
+                '--child-frame-id', 'unitree_go1/laser',
             ],
         ),
         Node(
@@ -27,7 +27,7 @@ def generate_launch_description():
             parameters=[{
                 'serial_port': '/dev/serial/by-id/usb-Hokuyo_Data_Flex_for_USB_URG-Series_USB_Driver-if00',
                 'serial_baud': 115200,
-                'laser_frame_id': 'laser',
+                'laser_frame_id': 'unitree_go1/laser',
                 'angle_min': -3.14,
                 'angle_max': 3.14,
                 'calibrate_time': False,
