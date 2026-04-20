@@ -15,7 +15,7 @@ def generate_launch_description():
                 '--roll', '0.0',
                 '--pitch', '0.0',
                 '--yaw', '0.0',
-                '--frame-id', 'unitree_go1/base',
+                '--frame-id', 'unitree_go1/trunk',
                 '--child-frame-id', 'unitree_go1/laser',
             ],
         ),
